@@ -1,14 +1,24 @@
 Package: GitPresentation
-Title: What the Package Does (One Line, Title Case)
+Title: Information About Using Git
 Version: 0.0.0.9000
-Authors@R: 
+Authors@R:
     person(given = "Kevin",
            family = "See",
            role = c("aut", "cre"),
            email = "kevinsee@biomark.com",
            comment = c(ORCID = "0000-0002-9762-6442"))
-Description: What the package does (one paragraph)
+Description: A series of links for helpful webpages, examples, and R packages to use R and Git for reproducible research.
 License: MIT + file LICENSE
 ByteCompile: true
 Encoding: UTF-8
 LazyData: true
+Imports: bookdown,
+    here,
+    kableExtra (>= 1.0.1),
+    knitr (>= 1.26),
+    lubridate (>= 1.7.4),
+    remotes (>= 2.0.2),
+    tidyverse (>= 1.2.1),
+    xaringan (>= 0.8.11)
+Suggests: devtools,
+    git2r

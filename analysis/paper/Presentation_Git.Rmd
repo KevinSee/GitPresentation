@@ -1,0 +1,107 @@
+---
+title: "Using Git for Reproducible Research"
+subtitle: "AMIP LCM"
+# author:
+#   - Kevin See:
+#       email: Kevin.See@biomark.com
+#       institute: Biomark
+#       correspondence: true
+#   - Dalton Hance:
+#       email: dhance@usgs.gov
+#       institute: [USGS]
+#       correspondence: false
+# institute:
+#   - USGS: United States Geological Service
+author: Kevin See & Dalton Hance
+date: "November 20, 2019"
+output:
+  xaringan::moon_reader:
+    css: [default, rladies]
+    nature:
+      ratio: '4:3'
+      highlightStyle: sunburst
+      highlightLines: true
+      slideNumberFormat: '%current%'
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(lubridate)
+
+theme_set(theme_bw())
+
+knitr::opts_chunk$set(warning = F, message = F)
+```
+
+class: center, middle
+
+# Using Git
+
+<center>
+```{r git_logo_image, echo = F, out.width='60%'}
+include_graphics('images/git_logo.png', dpi = NA)
+```
+</center>
+
+---
+class: top
+
+# Help with Git
+
+* Getting started: https://happygitwithr.com/
+* When everything goes wrong: https://dangitgit.com/
+
+## Just for fun
+*Because StarWars makes everything better*
+* http://starlogs.net
+* [Example](http://starlogs.net/#kevinsee/QRFcapacity)
+
+
+
+---
+class: middle
+
+# Some Thoughts
+
+## As an R Package
+
+* R packages have certain structure
+  * One example that I've written: [PITcleanr](https://github.com/KevinSee/PITcleanr)
+  * Can use [RStudio or devtools package](http://r-pkgs.had.co.nz/package.html) to set it all up
+
+## For other research
+* Set up your Git repo like an R package
+  * Add folders like, "analysis", "reports", "figures", etc.
+* One example from me: [QRFcapacity](https://github.com/KevinSee/QRFcapacity)
+  * series of R scripts in `/analysis`
+  * saved some prepped data as in an R package, available through `data()`
+
+---
+class: middle
+
+# Some Resources
+
+* Article: [Excuse me, do you have a moment to talk about version control?](https://peerj.com/preprints/3159/)
+* NOAA course on [reproducible research](https://eriqande.github.io/rep-res-eeb-2017/week3.html)
+* A different course on [using Git](https://monashdatafluency.github.io/r-rep-res/index.html)
+* How to build an [R package by Hadley Wickham](http://r-pkgs.had.co.nz/)
+* A few ideas on using R and Git for reproducible research:
+  * [Another paper on how to do this](https://peerj.com/preprints/3192/)
+  * [rrtools](https://github.com/benmarwick/rrtools)
+  * [Hadley Wickham's thoughts](https://docs.google.com/document/d/1LzZKS44y4OEJa4Azg5reGToNAZL0e0HSUwxamNY7E-Y/edit#)
+* Some suggestions for [Git workflow](https://www.atlassian.com/git/tutorials/comparing-workflows), on BitBucket
+
+
+
+---
+class: center, middle
+
+<center>
+```{r git_funny_image, echo = F, out.width='100%'}
+include_graphics('images/git_funny.jpeg', dpi = NA)
+```
+</center>
