@@ -22,3 +22,5 @@ Imports: bookdown,
     xaringan (>= 0.8.11)
 Suggests: devtools,
     git2r
+URL: https://github.com/KevinSee/GitPresentation
+BugReports: https://github.com/KevinSee/GitPresentation/issues
